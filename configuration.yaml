@@ -5,10 +5,6 @@ default_config:
 tts:
   - platform: google_translate
 
-group: !include groups.yaml
-automation: !include automations.yaml
-script: !include scripts.yaml
-scene: !include scenes.yaml
 
 homeassistant:
   name: Home
@@ -16,3 +12,14 @@ homeassistant:
   longitude: !secret ha_lng
   unit_system: metric
   time_zone: Europe/Amsterdam
+
+
+spotify:
+  client_id: !secret spotify_client
+  client_secret: !secret spotify_secret
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+scene: !include scenes.yaml
+zone: !include zones.yaml

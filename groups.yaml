@@ -1,0 +1,11 @@
+livingroom:
+  name: Woonkamer
+
+bathroom:
+  name: Badkamer
+
+kitchen:
+  name: Keuken
+
+hallway:
+  name: Gang
