@@ -54,3 +54,4 @@ lights:
     - group.lights_kitchen
     - group.lights_hallway
     - group.lights_bedroom
+    - group.lights_dining
