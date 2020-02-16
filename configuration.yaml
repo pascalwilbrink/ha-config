@@ -33,6 +33,11 @@ telegram_bot:
     allowed_chat_ids: 
       - !secret telegram_chat_id
 
+# Weather
+weather:
+  - platform: darksky
+    api_key: !secret darksky_api_key
+
 # Includes
 group: !include groups.yaml
 automation: !include automations.yaml
