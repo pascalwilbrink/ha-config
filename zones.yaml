@@ -9,3 +9,9 @@
   longitude: !secret zone_work_lng
   radius: 50
   icon: mdi:briefcase
+
+- name: Parents
+  latitude: !secret zone_parents_lat
+  longitude: !secret zone_parents_lng
+  radius: 50
+  icon: mdi:account-group
