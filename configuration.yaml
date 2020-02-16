@@ -37,3 +37,4 @@ scene: !include scenes.yaml
 zone: !include zones.yaml
 calendar: !include calendar.yaml
 input_boolean: !include input_boolean.yaml
+notify: !include notify.yaml
