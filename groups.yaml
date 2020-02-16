@@ -9,3 +9,13 @@ kitchen:
 
 hallway:
   name: Gang
+
+lights:
+  name: Lichten
+  entities:
+    - light.eetkamer
+    - light.eettafel_links
+    - light.gang
+    - light.slaapkamer_2
+    - light.keuken_links
+    - light.keuken_rechts
