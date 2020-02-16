@@ -21,6 +21,8 @@ lights_livingroom:
 lights_bathroom:
   name: Lichten badkamer
   entities:
+    - light.badkamer
+    - light.badkamer_spiegel_links
 
 lights_kitchen:
   name: Lichten keuken
