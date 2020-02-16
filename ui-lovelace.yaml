@@ -1,0 +1,3 @@
+title: Home Assistant
+views:
+  - !include ui/home.yaml
