@@ -10,12 +10,39 @@ kitchen:
 hallway:
   name: Gang
 
+bedroom:
+  name: Slaapkamer
+
+lights_livingroom:
+  name: Lichten woonkamer
+  entities:
+    - light.woonkamer
+
+lights_bathroom:
+  name: Lichten badkamer
+  entities:
+
+lights_kitchen:
+  name: Lichten keuken
+  entities:
+    - light.keuken_links
+    - light.keuken_rechts
+
+lights_hallway:
+  name: Lichten gang
+  entities:
+    - light.gang
+
+lights_bedroom:
+  name: Lichten slaapkamer
+  entities:
+    - light.slaapkamer_2
+
 lights:
   name: Lichten
   entities:
-    - light.eetkamer
-    - light.eettafel_links
-    - light.gang
-    - light.slaapkamer_2
-    - light.keuken_links
-    - light.keuken_rechts
+    - group.lights_livingroom
+    - group.lights_bathroom
+    - group.lights_kitchen
+    - group.lights_hallway
+    - group.lights_bedroom
