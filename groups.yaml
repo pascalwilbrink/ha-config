@@ -38,6 +38,12 @@ lights_bedroom:
   entities:
     - light.slaapkamer_2
 
+lights_dining:
+  name: Lichten eettafel
+  entities:
+    - light.eettafel_links
+    - light.eettafel_rechts
+
 lights:
   name: Lichten
   entities:
