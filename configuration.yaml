@@ -53,3 +53,4 @@ calendar: !include calendar.yaml
 input_boolean: !include input_boolean.yaml
 notify: !include notify.yaml
 sensor: !include sensor.yaml
+light: !include light.yaml

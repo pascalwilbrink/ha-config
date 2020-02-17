@@ -1,0 +1,44 @@
+  - platform: group
+    name: Kitchen Lights
+    entities:
+      - light.kitchen_ceiling_lights
+      - light.kitchen_under_cabinet_lights
+      - light.kitchen_spot_lights
+      - light.pendant_lights
+
+- platform: group
+  name: Lichten woonkamer
+  entities:
+    - light.woonkamer
+
+- platform: group
+  name: Lichten badkamer
+  entities:
+    - light.badkamer
+    - light.badkamer_spiegel_links
+
+- platform: group
+  name: Lichten keuken
+  entities:
+    - light.keuken_links
+    - light.keuken_rechts
+  
+- platform: group
+  name: Lichten gang
+  entities:
+    - light.gang
+
+- platform: group
+  name: Lichten slaapkamer
+  entities:
+    - light.slaapkamer_2
+
+- platform: group
+  name: Lichten eettafel
+  entities:
+    - light.eettafel_links
+    - light.eettafel_rechts
+
+- platform: group
+  name: Lichten
+  entites:
