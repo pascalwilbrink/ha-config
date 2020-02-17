@@ -1,57 +1,24 @@
 livingroom:
   name: Woonkamer
+  entities:
+    - light.lighten_woonkamer
 
 bathroom:
   name: Badkamer
+  entities:
+    - light.lichten_badkamer
 
 kitchen:
   name: Keuken
+  entities:
+    - light.lichten_keuken
 
 hallway:
   name: Gang
+  entities:
+    - light.lichten_gang
 
 bedroom:
   name: Slaapkamer
-
-lights_livingroom:
-  name: Lichten woonkamer
   entities:
-    - light.woonkamer
-
-lights_bathroom:
-  name: Lichten badkamer
-  entities:
-    - light.badkamer
-    - light.badkamer_spiegel_links
-
-lights_kitchen:
-  name: Lichten keuken
-  entities:
-    - light.keuken_links
-    - light.keuken_rechts
-
-lights_hallway:
-  name: Lichten gang
-  entities:
-    - light.gang
-
-lights_bedroom:
-  name: Lichten slaapkamer
-  entities:
-    - light.slaapkamer_2
-
-lights_dining:
-  name: Lichten eettafel
-  entities:
-    - light.eettafel_links
-    - light.eettafel_rechts
-
-lights:
-  name: Lichten
-  entities:
-    - group.lights_livingroom
-    - group.lights_bathroom
-    - group.lights_kitchen
-    - group.lights_hallway
-    - group.lights_bedroom
-    - group.lights_dining
+    - light.lichten_slaapkamer
