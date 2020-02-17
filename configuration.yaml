@@ -38,6 +38,11 @@ weather:
   - platform: darksky
     api_key: !secret darksky_api_key
 
+# Google
+google:
+  client_id: !secret google_client_id
+  client_secret: !secret google_client_secret
+
 # Includes
 group: !include groups.yaml
 automation: !include automations.yaml
@@ -47,3 +52,4 @@ zone: !include zones.yaml
 calendar: !include calendar.yaml
 input_boolean: !include input_boolean.yaml
 notify: !include notify.yaml
+sensor: !include sensor.yaml
