@@ -38,7 +38,3 @@
   entities:
     - light.eettafel_links
     - light.eettafel_rechts
-
-- platform: group
-  name: Lichten
-  entities:
