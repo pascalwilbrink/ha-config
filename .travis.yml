@@ -18,4 +18,4 @@ after_success:
   - echo -n $GIT_TAG > VERSION
   - git commit -m "Set build VERSION number" VERSION
   - git tag $GIT_TAG -a -m "Generated tag from TravisCI build $TRAVIS_BUILD_NUMBER"
-  - git push --quiet https://$GITHUBKEY@github.com/pascalwilbrink/ha-config $GIT_TAG 
+  - git push https://$GITHUBKEY@github.com/pascalwilbrink/ha-config $GIT_TAG 
