@@ -1,0 +1,13 @@
+- platform: template
+  device_class: presence
+  sensors:
+    presense:
+      friendly_name: "Presence"
+      value_template: >-
+        {% if is_state('input_boolean.automatic_presence', 'on') & is_state('device_tracker.pascal_htcu12', 'home')) %}
+          on
+        {% elif is(state('input_boolean.automatic_presence', 'off') & is_state('input_boolean.presence', 'on')) %}
+          on
+        {% else %}
+          off
+        {%-endif-%}

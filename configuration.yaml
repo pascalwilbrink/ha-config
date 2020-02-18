@@ -12,7 +12,7 @@ homeassistant:
   longitude: !secret ha_lng
   unit_system: metric
   time_zone: Europe/Amsterdam
-  customize: !include customize.yaml
+  customize: !include customizations/customize.yaml
 
 # Lovelace
 lovelace:
@@ -44,13 +44,14 @@ google:
   client_secret: !secret google_client_secret
 
 # Includes
-group: !include groups.yaml
-automation: !include automations.yaml
-script: !include scripts.yaml
-scene: !include scenes.yaml
-zone: !include zones.yaml
-calendar: !include calendar.yaml
-input_boolean: !include input_boolean.yaml
-notify: !include notify.yaml
-sensor: !include sensor.yaml
-light: !include light.yaml
+group: !include groups/group.yaml
+automation: !include automations/automation.yaml
+script: !include scripts/script.yaml
+scene: !include scenes/scene.yaml
+zone: !include zones/zone.yaml
+calendar: !include calendars/calendar.yaml
+input_boolean: !include input_booleans/input_boolean.yaml
+notify: !include notifiers/notify.yaml
+sensor: !include sensors/sensor.yaml
+light: !include lights/light.yaml
+binary_sensor: !include binary_sensors/binary_sensor.yaml

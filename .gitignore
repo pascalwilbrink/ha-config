@@ -7,8 +7,19 @@
 !*.yml
 !.gitignore
 !*.md
-!ui/*.yaml
+
 !ui
+!automations
+!calendar
+!customize
+!group
+!input_boolean
+!light
+!notify
+!scenes
+!scripts
+!sensors
+!binary_sensors
 
 # Ignore folders.
 .storage
