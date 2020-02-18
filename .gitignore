@@ -11,12 +11,12 @@
 
 !ui
 !automations
-!calendar
+!calendars
 !customizations
-!group
+!groups
 !input_boolean
-!light
-!notify
+!lights
+!notifiers
 !scenes
 !scripts
 !sensors
