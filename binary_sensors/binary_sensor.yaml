@@ -6,8 +6,8 @@
       value_template: >-
         {% if is_state('input_boolean.automatic_presence', 'on') and is_state('device_tracker.pascal_htcu12', 'home') %}
           on
-        {% elif is(state('input_boolean.automatic_presence', 'off') and is_state('input_boolean.presence', 'on') %}
+        {% elif is_state('input_boolean.automatic_presence', 'off') and is_state('input_boolean.presence', 'on') %}
           on
         {% else %}
           off
-        {%-endif-%}
+        {% endif %}
