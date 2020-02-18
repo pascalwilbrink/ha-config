@@ -22,6 +22,7 @@
 !sensors
 !binary_sensors
 !zones
+!input_booleans
 
 # Ignore folders.
 .storage
