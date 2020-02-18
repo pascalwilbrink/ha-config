@@ -1,3 +1,14 @@
 title: Home Assistant
+
+resources:
+  - url: /local/custom_components/mini-media-player/mini-media-player.bundle.js?v=1.6.0
+    type: module
+  - url: /local/custom_components/travel-time/travel-time.bundle.js
+    type: js
+  - url: /local/custom_components/calendar/calendar-card.js
+    type: module
+
 views:
   - !include ui/home.yaml
+  - !include ui/livingroom.yaml
+  - !include ui/bedroom.yaml

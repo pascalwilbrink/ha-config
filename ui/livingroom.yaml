@@ -1,0 +1,162 @@
+title: Woonkamer
+cards:
+  - type: light
+    entity: light.woonkamer
+
+  - type: custom:mini-media-player
+    entity: media_player.living_room
+    icon: mdi:spotify
+    artwork: cover
+
+  - type: glance
+    title: PS4
+    entities:
+      - entity: media_player.playstation_4
+        name: Aan
+        show_state: false
+        icon: mdi:power
+        tap_action:
+          service: media_player.turn_on
+          action: call-service
+          service_data: 
+            entity_id: media_player.playstation_4
+
+      - entity: media_player.playstation_4
+        name: Uit
+        show_state: false
+        icon: mdi:power-cycle
+        tap_action:
+          service: media_player.turn_off
+          action: call-service
+          service_data:
+            entity_id: media_player.playstation_4
+ 
+  - type: glance
+    title: TV
+    columns: 3
+    entities:
+      - entity: media_player.android_tv
+        name: ''
+        icon: mdi:television
+        tap_action:
+          action: none
+
+      - entity: media_player.android_tv
+        name: ''
+        icon: mdi:power
+        show_state: false
+        tap_action:
+          action: call-service
+          service: media_player.toggle
+          service_data:
+            entity_id: media_player.android_tv
+
+      - entity: media_player.android_tv
+        name: ''
+        icon: mdi:home
+        show_state: false
+        tap_action:
+          action: call-service
+          service: androidtv.adb_command
+          service_data:
+            entity_id: media_player.android_tv
+            command: 'HOME'
+            
+      - entity: media_player.android_tv
+        name: ''
+        icon: mdi:volume-minus
+        show_state: false
+        tap_action:
+          action: call-service
+          service: androidtv.adb_command
+          service_data:
+            entity_id: media_player.android_tv
+            command: 'VOLUME_DOWN'
+            
+      - entity: media_player.android_tv
+        name: ''
+        icon: mdi:menu-up
+        show_state: false
+        tap_action:
+          action: call-service
+          service: androidtv.adb_command
+          service_data:
+            entity_id: media_player.android_tv
+            command: 'UP'
+            
+      - entity: media_player.android_tv
+        name: ''
+        icon: mdi:volume-plus
+        show_state: false
+        tap_action:
+          action: call-service
+          service: androidtv.adb_command
+          service_data:
+            entity_id: media_player.android_tv
+            command: 'VOLUME_UP'
+            
+      - entity: media_player.android_tv
+        name: ''
+        icon: mdi:menu-left
+        show_state: false
+        tap_action:
+          action: call-service
+          service: androidtv.adb_command
+          service_data:
+            entity_id: media_player.android_tv
+            command: 'LEFT'
+    
+      - entity: media_player.android_tv
+        name: ''
+        icon: mdi:circle
+        show_state: false
+        tap_action:
+          action: call-service
+          service: androidtv.adb_command
+          service_data:
+            entity_id: media_player.android_tv
+            command: 'CENTER'
+            
+      - entity: media_player.android_tv
+        name: ''
+        icon: mdi:menu-right
+        show_state: false
+        tap_action:
+          action: call-service
+          service: androidtv.adb_command
+          service_data:
+            entity_id: media_player.android_tv
+            command: 'RIGHT'
+            
+      - entity: media_player.android_tv
+        name: ''
+        icon: mdi:arrow-left-circle
+        show_state: false
+        tap_action:
+          action: call-service
+          service: androidtv.adb_command
+          service_data:
+            entity_id: media_player.android_tv
+            command: 'BACK'
+            
+      - entity: media_player.android_tv
+        name: ''
+        icon: mdi:menu-down
+        show_state: false
+        tap_action:
+          action: call-service
+          service: androidtv.adb_command
+          service_data:
+            entity_id: media_player.android_tv
+            command: 'DOWN'
+            
+      - entity: media_player.android_tv
+        name: ''
+        icon: mdi:netflix
+        show_state: false
+        tap_action:
+          action: call-service
+          service: media_player.select_source
+          service_data:
+            entity_id: media_player.android_tv
+            source: 'com.netflix.ninja'

@@ -1,0 +1,42 @@
+
+- cal_id: 4hqmmr7it9ahkr2dcm345hjf0o@group.calendar.google.com
+  entities:
+  - device_id: todoist
+    ignore_availability: true
+    name: Todoist
+    track: true
+
+- cal_id: m9u036sckaea0t2olibslg4bvk@group.calendar.google.com
+  entities:
+  - device_id: dev_vision_agenda
+    ignore_availability: true
+    name: Dev-Vision Agenda
+    track: true
+
+- cal_id: pascal.wilbrink@gmail.com
+  entities:
+  - device_id: pascal_wilbrink_gmail_com
+    ignore_availability: true
+    name: pascal.wilbrink@gmail.com
+    track: true
+
+- cal_id: c07217oj8j4kpjmns297ga8tbo@group.calendar.google.com
+  entities:
+  - device_id: dmec_project
+    ignore_availability: true
+    name: DMEC Project
+    track: true
+
+- cal_id: addressbook#contacts@group.v.calendar.google.com
+  entities:
+  - device_id: contacts
+    ignore_availability: true
+    name: Contacts
+    track: true
+
+- cal_id: nl.dutch#holiday@group.v.calendar.google.com
+  entities:
+  - device_id: feestdagen_in_nederland
+    ignore_availability: true
+    name: Feestdagen in Nederland
+    track: true
