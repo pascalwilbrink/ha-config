@@ -11,6 +11,7 @@
 !VERSION
 
 !.travis
+!.travis/*
 
 !ui
 !automations
