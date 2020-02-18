@@ -23,6 +23,7 @@
 !binary_sensors
 !zones
 !input_booleans
+!media_players
 
 # Ignore folders.
 .storage

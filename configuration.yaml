@@ -54,3 +54,4 @@ notify: !include notifiers/notify.yaml
 sensor: !include sensors/sensor.yaml
 light: !include lights/light.yaml
 binary_sensor: !include binary_sensors/binary_sensor.yaml
+media_player: !include media_players/media_player.yaml
