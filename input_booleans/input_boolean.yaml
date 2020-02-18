@@ -1,0 +1,8 @@
+automatic_presence:
+  name: Automatic presence detection
+  initial: on
+
+presence:
+  name: Presence
+  initial: on
+

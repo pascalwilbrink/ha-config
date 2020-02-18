@@ -7,8 +7,23 @@
 !*.yml
 !.gitignore
 !*.md
-!ui/*.yaml
+!.HA_VERSION
+
 !ui
+!automations
+!calendars
+!customizations
+!groups
+!input_boolean
+!lights
+!notifiers
+!scenes
+!scripts
+!sensors
+!binary_sensors
+!zones
+!input_booleans
+!media_players
 
 # Ignore folders.
 .storage
