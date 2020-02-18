@@ -1,0 +1,56 @@
+default_config:
+
+
+tts:
+  - platform: google_translate
+
+# Home Assistant
+homeassistant:
+  name: Home
+  latitude: !secret ha_lat
+  longitude: !secret ha_lng
+  unit_system: metric
+  time_zone: Europe/Amsterdam
+  customize: !include customizations/customize.yaml
+
+# Lovelace
+lovelace:
+  mode: yaml
+
+# Http
+http:
+
+# Spotify
+spotify:
+  client_id: !secret spotify_client
+  client_secret: !secret spotify_secret
+
+# Telegram
+telegram_bot:
+  - platform: polling
+    api_key: !secret telegram_api_key
+    allowed_chat_ids: 
+      - !secret telegram_chat_id
+
+# Weather
+weather:
+  - platform: darksky
+    api_key: !secret darksky_api_key
+
+# Google
+google:
+  client_id: !secret google_client_id
+  client_secret: !secret google_client_secret
+
+# Includes
+group: !include groups/group.yaml
+automation: !include automations/automation.yaml
+script: !include scripts/script.yaml
+scene: !include scenes/scene.yaml
+zone: !include zones/zone.yaml
+calendar: !include calendars/calendar.yaml
+input_boolean: !include input_booleans/input_boolean.yaml
+notify: !include notifiers/notify.yaml
+sensor: !include sensors/sensor.yaml
+light: !include lights/light.yaml
+binary_sensor: !include binary_sensors/binary_sensor.yaml

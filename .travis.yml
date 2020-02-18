@@ -1,0 +1,12 @@
+language: python
+python:
+  - "3.6"
+before_install:
+  - mv .travis.secrets.yaml secrets.yaml
+  - touch home-assistant_v2.db
+  - touch home-assistant.log
+  - HA_VERSION=$(<.HA_VERSION)
+install:
+  - pip3 install homeassistant
+script:
+  - hass -c . --script check_config
