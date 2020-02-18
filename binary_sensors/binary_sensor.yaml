@@ -3,6 +3,10 @@
     presence:
       device_class: presence
       friendly_name: "Presence"
+      entity_id:
+       - input_boolean.automatic_presence
+       - input_boolean.presence
+       - device_tracker.pascal_htcu12
       value_template: >-
         {%- if is_state('input_boolean.automatic_presence', 'on') and is_state('device_tracker.pascal_htcu12', 'home') -%}
           on
