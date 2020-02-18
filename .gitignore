@@ -7,6 +7,7 @@
 !*.yml
 !.gitignore
 !*.md
+!.HA_VERSION
 
 !ui
 !automations
