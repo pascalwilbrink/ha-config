@@ -14,7 +14,7 @@ install:
 script:
   - hass -c . --script check_config
 after_success:
-  - declare -r SSH_FILE="$(mktemp -u $HOME/.ssh/1dfd6373c0c7"
+  - declare -r SSH_FILE="$(mktemp -u $HOME/.ssh/1dfd6373c0c7)"
   - openssl aes-256-cbc -K $encrypted_1dfd6373c0c7_key -iv $encrypted_1dfd6373c0c7_iv -in ".travis/github_deploy_key.enc" -out "$SSH_FILE" -d
   - chmod 600 "$SSH_FILE" && printf "%s\n" "HHost github.com" "  IdentifyFile $SSH_FILE" "  LogLevel ERROR" >> ~/.ssh/config
   - export GIT_TAG=build-$TRAVIS_BRANCH-$(date -u "+%Y-%m-%d")-$TRAVIS_BUILD_NUMBER
