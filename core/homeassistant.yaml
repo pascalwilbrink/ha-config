@@ -1,0 +1,14 @@
+  name: Home
+  latitude: !secret ha_lat
+  longitude: !secret ha_lng
+  unit_system: metric
+  time_zone: Europe/Amsterdam
+  auth_providers:
+    - type: trusted_networks:
+      trusted_networks:
+        - 192.168.0.0/24
+        - fd00::/8
+      allow_bypass_login: true
+    - type: homeassistant
+
+  customize: !include customizations/customize.yaml

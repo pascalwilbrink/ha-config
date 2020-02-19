@@ -5,7 +5,12 @@
 
 Home Assistant Groups section include groups from different entities
 
-### Setup
+### Groups
+* Woonkamer
+* Badkamer
+* Slaapkamer
+* Keuken
+* Gang
 
 **group.yaml**
 ```yaml

@@ -5,13 +5,7 @@ tts:
   - platform: google_translate
 
 # Home Assistant
-homeassistant:
-  name: Home
-  latitude: !secret ha_lat
-  longitude: !secret ha_lng
-  unit_system: metric
-  time_zone: Europe/Amsterdam
-  customize: !include customizations/customize.yaml
+homeassistant: !include core/homeassistant.yaml
 
 # Lovelace
 lovelace:
@@ -20,29 +14,20 @@ lovelace:
 # Http
 http:
 
-# Spotify
-spotify:
-  client_id: !secret spotify_client
-  client_secret: !secret spotify_secret
-
-# Telegram
-telegram_bot:
-  - platform: polling
-    api_key: !secret telegram_api_key
-    allowed_chat_ids: 
-      - !secret telegram_chat_id
+# Conversation
+conversation:
 
 # Weather
 weather:
   - platform: darksky
     api_key: !secret darksky_api_key
 
-# Google
-google:
-  client_id: !secret google_client_id
-  client_secret: !secret google_client_secret
+# Integrations
+spotify: !include integrations/spotify/spotify.yaml
+telegram_bot: !include integrations/telegram/telegram.yaml
+google: !include integrations/google/google.yaml
 
-# Includes
+# Core
 group: !include groups/group.yaml
 automation: !include automations/automation.yaml
 script: !include scripts/script.yaml
@@ -55,3 +40,4 @@ sensor: !include sensors/sensor.yaml
 light: !include lights/light.yaml
 binary_sensor: !include binary_sensors/binary_sensor.yaml
 media_player: !include media_players/media_player.yaml
+person: !include persons/person.yaml
