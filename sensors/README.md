@@ -7,7 +7,7 @@ Home Assistant Sensors section include sensors
 
 ## Sensors
 * [Travel Time](#travel-time)
-
+* [Travis CI](#travis-ci)
 
 ### Travel Time
 The travel time sensors return the travel time to a specific destination (latitude / longitude) with an origin based on a device-tracker.
@@ -25,4 +25,19 @@ The travel time sensors return the travel time to a specific destination (latitu
 **secret.yaml**
 ```yaml
 waze_home_destination: 0.00000, 0.00000
+```
+
+### Travis CI
+The Travis CI sensor shows the latest builds from [https://travis-ci.org](Travis CI).
+### Setup
+
+**sensor.yaml**
+```yaml
+- platform: travisci
+  api_key: !secret github_api_key
+```
+
+**secret.yaml**
+```
+github_api_key: FAKE_API_KEY
 ```
