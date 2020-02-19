@@ -11,4 +11,4 @@ auth_providers:
     allow_bypass_login: true
   - type: homeassistant
 
-customize: !include ./customizations/customize.yaml
+customize: !include ../customizations/customize.yaml
