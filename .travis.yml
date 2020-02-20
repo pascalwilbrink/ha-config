@@ -17,7 +17,7 @@ after_success:
 - echo -n $GIT_TAG > VERSION
 - git commit -m "Set build VERSION number" VERSION
 - git tag $GIT_TAG -a -m "Generated tag from Travis CI build $TRAVIS_BUILD_NUMBER"
-- git push --quiet https://$GH_TOKEN@github.com/pascalwilbrink/ha-config $GIT_TAG > /dev/null 2>&1
+- git push --quiet https://$GH_TOKEN@github.com/pascalwilbrink/ha-config $GIT_TAG
 env:
   global:
   - secure: tZ1zWAsJIEYkugYQ7IzB61avGinTG+2pYQ5LaKhJpO4LeAAKFXOlygfl4NGF7kWlgEerZ6kVU91S/G7AkybDsz8WaiDdNqJvdjzm4gUJEcOMl7KuA5EpK8dfGHRyCoPi0/oKJfXyje8gkSRpXKFcPz2ukOoPUN/ug5XJ1/VZueIYQbm5MueERbQrQytNFqTp/K88HTxbHaY6ECoQHEbzio6gQHSHbL8yzbs03jlP+oVvG1LP/BE+U6GjScYgRemEqHqJChObyApxGpP4PjsTRanum8+H89AagGaOErC14aNs+m47UZoqkp3xrFapK4DJEdQrKgENnVl55tDBFF1kt1D8lh3DMpLR6zbLeSPnn7WtQAdrowDkFnf3dklHSL3u3TiHAdckzDgfN+wmSmS5Ir0gY0GHjmO6F3tGP0+K29u38Ea62+MSpRyE27ODpKZCLzOUHHDjV7iD+df7HWzgm6PiJfBhPNladlxu+0WoN5+tb3P9nr2JCug7xSgNvljwS09RQ5XDlrL76mVmFNSBTfkzN1E/yX+0g6VGOvwxtej6ULheT8Ca6Etik0hFacmL0bZTlSOC3LMOi05CX9SW5g1UDOU/m02EJSq0vh8UJntcGXQCwOAOlhiGex8FFwckhHvfKYspPP5fqKQwvtLT2tDoRL1UIN7nFempg51DDVs=
