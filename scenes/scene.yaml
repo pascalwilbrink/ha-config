@@ -1,0 +1,20 @@
+- name: Away
+  entities:
+    light.lichten: off
+    media_player.living_room: off
+
+- name: Dinner
+  entities:
+    light.eettafel: on
+
+- name: Movie
+  entities:
+    light.woonkamer: on
+
+- name: Gaming
+  entities:
+    light.woonkamer: on
+
+- name: Work
+  entities:
+    light.woonkamer: on
