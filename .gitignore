@@ -8,6 +8,7 @@
 !.gitignore
 !*.md
 !.HA_VERSION
+!VERSION
 
 !ui
 !automations
