@@ -25,6 +25,11 @@
 !zones
 !input_booleans
 !media_players
+!persons
+!integrations
+!integrations/*
+!core
+!switches
 
 # Ignore folders.
 .storage

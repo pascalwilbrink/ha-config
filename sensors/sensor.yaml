@@ -9,3 +9,6 @@
   origin: device_tracker.pascal_htcu12
   destination: !secret waze_home_destination
   region: 'EU'
+
+- platform: travisci
+  api_key: !secret github_api_key
