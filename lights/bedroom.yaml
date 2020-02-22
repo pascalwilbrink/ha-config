@@ -1,0 +1,4 @@
+- platform: group
+  name: Lichten slaapkamer
+  entities:
+    - light.slaapkamer_2

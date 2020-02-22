@@ -1,0 +1,5 @@
+- name: Away
+  entities:
+    light.lichten: off
+    media_player.living_room: pause
+    media_player.android_tv: off

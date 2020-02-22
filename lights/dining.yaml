@@ -1,0 +1,5 @@
+- platform: group
+  name: Lichten eettafel
+  entities:
+    - light.eettafel_links
+    - light.eettafel_rechts

@@ -1,0 +1,10 @@
+- platform: group
+  name: Lichten
+  entities:
+    - light.lichten_badkamer
+    - light.lichten_eettafel
+    - light.lichten_gang
+    - light.lichten_keuken
+    - light.lichten_slaapkamer
+    - light.lichten_woonkamer
+    - light.lichten_tv_ambilight

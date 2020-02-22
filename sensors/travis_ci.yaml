@@ -1,0 +1,4 @@
+- platform: travisci
+  api_key: !secret github_api_key
+  repository:
+    - ha-config

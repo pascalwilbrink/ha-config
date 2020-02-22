@@ -1,0 +1,4 @@
+- platform: group
+  name: Lichten woonkamer
+  entities:
+    - light.woonkamer

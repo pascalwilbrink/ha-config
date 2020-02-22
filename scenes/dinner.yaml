@@ -1,0 +1,3 @@
+- name: Dinner
+  entities:
+    light.eettafel: on

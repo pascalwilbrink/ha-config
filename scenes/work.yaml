@@ -1,0 +1,3 @@
+- name: Work
+  entities:
+    light.woonkamer: on

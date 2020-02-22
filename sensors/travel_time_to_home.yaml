@@ -1,0 +1,5 @@
+- name: Travel time to home
+  platform: waze_travel_time
+  origin: device_tracker.pascal_htcu12
+  destination: !secret waze_home_destination
+  region: 'EU'
