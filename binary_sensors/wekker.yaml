@@ -1,6 +1,6 @@
-- platform: template
-  sensors:
-    wake_up_alarm:
-      friendly_name: "Wekker"
-      value_template: >-
-        {{   states('sensor.time') == (state_attr('input_datetime.alarm_time', 'timestamp') | timestamp_custom('%H:%M', false)) }}
+platform: template
+sensors:
+  wake_up_alarm:
+    friendly_name: "Wekker"
+    value_template: >-
+      {{   states('sensor.time') == (state_attr('input_datetime.alarm_time', 'timestamp') | timestamp_custom('%H:%M', false)) }}

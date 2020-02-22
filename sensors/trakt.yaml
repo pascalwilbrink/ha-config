@@ -1,5 +1,5 @@
-- platform: trakt
-  id: !secret trakt_client_id
-  secret: !secret trakt_client_secret
-  username: pascalwilbrink
-  days: 10
+platform: trakt
+id: !secret trakt_client_id
+secret: !secret trakt_client_secret
+username: pascalwilbrink
+days: 10

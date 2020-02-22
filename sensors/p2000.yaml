@@ -1,4 +1,4 @@
-- platform: p2000
-  regios: 4
-  radius: 20000
-  scan_interval: 30
+platform: p2000
+regios: 4
+radius: 20000
+scan_interval: 30

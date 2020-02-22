@@ -1,0 +1,9 @@
+alias: 'Turn off all the lights when presence is off'
+trigger:
+  - platform: state
+    entity_id: binary_sensor.presence
+    to: 'off'
+action:
+  - service: light.turn_off
+    data:
+      entity_id: light.lichten

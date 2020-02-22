@@ -1,5 +1,5 @@
-- platform: group
-  name: Lichten badkamer
-  entities:
-    - light.badkamer
-    - light.badkamer_spiegel_links
+platform: group
+name: Lichten badkamer
+entities:
+  - light.badkamer
+  - light.badkamer_spiegel_links

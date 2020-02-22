@@ -1,5 +1,5 @@
-- platform: flux
-  lights:
-    - light.woonkamer
-    - light.eettafel
-    - light.slaapkamer
+platform: flux
+lights:
+  - light.woonkamer
+  - light.eettafel
+  - light.slaapkamer
