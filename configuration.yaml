@@ -28,16 +28,16 @@ telegram_bot: !include integrations/telegram/telegram.yaml
 google: !include integrations/google/google.yaml
 
 # Core
-group: !include_dir_list groups
-automation: !include_dir_list automations
+group: !include_dir_list groups/
+automation: !include_dir_list automations/
 script: !include scripts/script.yaml
-scene: !include_dir_list scenes
-zone: !include_dir_list zones
+scene: !include_dir_list scenes/
+zone: !include_dir_list zones/
 calendar: !include calendars/calendar.yaml
 input_boolean: !include input_booleans/input_boolean.yaml
 notify: !include notifiers/notify.yaml
-sensor: !include_dir_list sensors
-light: !include_dir_list lights
+sensor: !include_dir_list sensors/
+light: !include_dir_list lights/
 binary_sensor: !include_dir_list binary_sensors
 media_player: !include media_players/media_player.yaml
 person: !include persons/person.yaml
