@@ -12,3 +12,28 @@
 
 - platform: travisci
   api_key: !secret github_api_key
+  repository:
+    - ha-config
+    
+- platform: trakt
+  id: !secret trakt_client_id
+  secret: !secret trakt_client_secret
+  username: pascalwilbrink
+  days: 10
+
+- platform: p2000
+  regios: 4
+  radius: 20000
+  scan_interval: 30
+
+
+- platform: time_date
+  display_options:
+    - 'time'
+    - 'date'
+    - 'date_time'
+    - 'date_time_utc'
+    - 'date_time_iso'
+    - 'time_date'
+    - 'time_utc'
+    - 'beat'

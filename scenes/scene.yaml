@@ -1,7 +1,8 @@
 - name: Away
   entities:
     light.lichten: off
-    media_player.living_room: off
+    media_player.living_room: pause
+    media_player.android_tv: off
 
 - name: Dinner
   entities:
@@ -18,3 +19,8 @@
 - name: Work
   entities:
     light.woonkamer: on
+
+- name: Netflix
+  entities:
+    media_player.living_room: pause
+    media_player.android_tv: on

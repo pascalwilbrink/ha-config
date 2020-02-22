@@ -6,3 +6,14 @@ presence:
   name: Presence
   initial: on
 
+living_room_occupied:
+  name: Living Room Occupied
+  initial: false
+
+bedroom_occupied:
+  name: Bedroom Occupied
+  initial: false
+  
+bathroom_occupied:
+  name: Bathroom Occupied
+  initial: false

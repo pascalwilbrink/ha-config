@@ -44,3 +44,29 @@
     - service: light.turn_off
       data:
         entity_id: light.lichten
+
+- alias: 'Living Room occupied'
+  initial_state: 'on'
+  trigger:
+    - platform: template
+      value_template: "{{ not is_state('media_player.android_tv', 'unavailable') }}"
+    - platform: template
+      value_template: "{{ not is_state('media_player.living_room', 'playing') }}"
+    - platform: template
+      value_template: "{{ not is_state('media_player.android_tv', 'off') }}"
+  action:
+    - service: input_boolean.turn_on
+      data:
+        entity_id: input_boolean.living_room_occupied
+
+- alias: 'Wekker'
+  initial_state: 'on'
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.wake_up_alarm
+      to: 'on'
+  action:
+    - service: persistent_notification.create
+      data:
+        message: "Your message goes here"
+        title: "Custom subject"

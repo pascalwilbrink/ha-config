@@ -40,4 +40,9 @@
     - light.lichten_keuken
     - light.lichten_slaapkamer
     - light.lichten_woonkamer
-    
+
+- platform: philips_ambilight
+  name: TV Ambilight
+  host: 192.168.2.2
+  username: !secret philips_tv_username
+  password: !secret philips_tv_password

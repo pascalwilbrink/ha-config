@@ -7,8 +7,13 @@ resources:
     type: js
   - url: /local/custom_components/calendar/calendar-card.js
     type: module
-
+  - url: /community_plugin/upcoming-media-card/upcoming-media-card.js
+    type: js
+  - url: /community_plugin/weather-card/weather-card.js
+    type: module
+    
 views:
   - !include ui/home.yaml
   - !include ui/livingroom.yaml
   - !include ui/bedroom.yaml
+  - !include ui/settings.yaml

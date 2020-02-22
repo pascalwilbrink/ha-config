@@ -1,8 +1,9 @@
 title: Home
 icon: mdi:home
 cards:
-  - type: weather-forecast
+  - type: custom:weather-card
     entity: weather.dark_sky
+    name: Raalte
 
   - type: glance
     title: Sensors
@@ -83,12 +84,19 @@ cards:
         hide:
           volume: true
           power: true
+      
       - type: custom:mini-media-player
         entity: media_player.living_room
         group: true
         hide:
           controls: true
-          
+      
+      - type: custom:mini-media-player
+        entity: media_player.google_home_woonkamer
+        group: true
+        hide:
+          controls: true
+         
       - type: custom:mini-media-player
         entity: media_player.slaapkamer
         group: true
@@ -99,8 +107,12 @@ cards:
     entities:
       - entity: person.pascal_wilbrink
         name: Pascal
-      - entity: input_boolean.away
-        name: Away
+      - entity: binary_sensor.presence
+        name: Presence
         icon: mdi:home-map-marker
-        tap_action:
-          action: toggle
+
+  - type: custom:upcoming-media-card
+    entity: sensor.trakt_upcoming_calendar
+    title: Upcoming
+    text_shadows: false
+    box_shadows: false

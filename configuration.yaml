@@ -20,6 +20,7 @@ conversation:
 weather:
   - platform: darksky
     api_key: !secret darksky_api_key
+    mode: daily
 
 # Integrations
 spotify: !include integrations/spotify/spotify.yaml
@@ -40,3 +41,15 @@ light: !include lights/light.yaml
 binary_sensor: !include binary_sensors/binary_sensor.yaml
 media_player: !include media_players/media_player.yaml
 person: !include persons/person.yaml
+
+
+spotcast:
+  username: !secret spotify_username
+  password: !secret spotify_password
+  
+  
+input_datetime:
+  alarm_time:
+    name: "Wekker"
+    has_date: false
+    has_time: true
