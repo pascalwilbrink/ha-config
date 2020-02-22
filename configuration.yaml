@@ -28,7 +28,7 @@ telegram_bot: !include integrations/telegram/telegram.yaml
 google: !include integrations/google/google.yaml
 
 # Core
-group: !include_dir_list groups/
+group: !include groups/group.yaml
 automation: !include_dir_list automations/
 script: !include scripts/script.yaml
 scene: !include_dir_list scenes/
