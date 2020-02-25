@@ -10,8 +10,14 @@ action:
       brightness: 255
       kelvin: 2700
       transition: 300
+
+  - service: media_player.volume_set
+    data:
+      entity_id: media_player.slaapkamer
+      volume_level: .4
+
   - service: spotcast.start
     data:
       uri: 'spotify:playlist:37i9dQZEVXcMWTflsxeSlz'
       transfer_playback: false
-      entity_id: media_player.google_home_woonkamer
+      entity_id: media_player.slaapkamer
