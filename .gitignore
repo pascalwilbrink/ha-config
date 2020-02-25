@@ -15,7 +15,6 @@
 !calendars
 !customizations
 !groups
-!input_boolean
 !lights
 !notifiers
 !scenes
@@ -30,6 +29,7 @@
 !integrations/*
 !core
 !switches
+!input_datetimes
 
 # Ignore folders.
 .storage
