@@ -4,7 +4,14 @@ trigger:
     entity_id: binary_sensor.wake_up_alarm
     to: 'on'
 action:
-  - service: persistent_notification.create
+  - service: light.turn_on
     data:
-      message: 'Your message goes here'
-      title: 'Custom subject'
+      entity_id: light.lichten_slaapkamer
+      brightness: 255
+      kelvin: 2700
+      transition: 300
+  - service: spotcast.start
+    data:
+      uri: 'spotify:playlist:37i9dQZEVXcMWTflsxeSlz'
+      transfer_playback: false
+      entity_id: media_player.google_home_woonkamer
