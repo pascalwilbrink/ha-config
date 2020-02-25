@@ -3,13 +3,30 @@
 
 [![Build Status](https://travis-ci.org/pascalwilbrink/ha-config.svg?branch=master)](https://travis-ci.org/pascalwilbrink/ha-config)
 
-Home Assistant Sensors section include sensors
+Home Assistant Sensors section include sensors.
+Each yaml file is included by configuration.yaml with ``` !include_dir_list sensors/```
 
 ## Sensors
-* [Travel Time](#travel-time)
+* [P2000](#p2000)
+* [Time Date](#time-date)
+* [Trakt](#trakt)
+* [Travel Time to Home](#travel-time-to-home)
+* [Travel Time to Work](#travel-time-to-work)
 * [Travis CI](#travis-ci)
-* [Sensor](#sensor)
 
+### P2000
+The p2000 sensor returns the latest
+
+| Name     | Value |
+|----------|-------|
+| platform | p2000 |
+| regios   | 4     |
+| radius        | 20000 |
+| scan_interval | 30
+platform: p2000
+regios: 4
+radius: 20000
+scan_interval: 30
 ### Travel Time
 The travel time sensors return the travel time to a specific destination (latitude / longitude) with an origin based on a device-tracker.
 #### Setup

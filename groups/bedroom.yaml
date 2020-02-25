@@ -1,0 +1,3 @@
+name: Slaapkamer
+entities:
+  - light.lichten_slaapkamer

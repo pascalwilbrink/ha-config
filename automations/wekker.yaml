@@ -6,5 +6,5 @@ trigger:
 action:
   - service: persistent_notification.create
     data:
-      message: "Your message goes here"
-      title: "Custom subject"
+      message: 'Your message goes here'
+      title: 'Custom subject'

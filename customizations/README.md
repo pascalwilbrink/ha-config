@@ -10,6 +10,6 @@ Home Assistant Customizations section include customizations of entities
 **customize.yaml**
 ```yaml
 person.pascal_wilbrink:
-  entity_picture: "/local/img/profile.png"
+  entity_picture: '/local/img/profile.png'
 ```
 

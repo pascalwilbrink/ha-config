@@ -5,15 +5,15 @@ cards:
     title: States
     show_header_toggle: false
     entities:
-      - entity: input_boolean.automatic_presence
-        name: Automatic presence detection
+      - entity: input_boolean.automatic_home_occupancy
+        name: Automatic Home Occupancy Detection
         icon: mdi:home-map-marker
   
   - type: entities
     title: Automations
     show_header_toggle: false
     entities:
-      - entity: automation.turn_on_automatic_presence_detection
-        name: '[Telegram callback]Turn on automatic presence detection'
-      - entity: automation.send_telegram_message_when_leaving_and_automatic_presence_detection_is_off
-        name: send Telegram message when leaving and automatic presence detection is off
+      - entity: automation.turn_on_automatic_home_occupancy_detection
+        name: '[Telegram callback]Turn on automatic home occupancy detection'
+      - entity: automation.send_telegram_message_when_leaving_and_automatic_home_occupancy_detection_is_off
+        name: send Telegram message when leaving and automatic home occupancy detection is off

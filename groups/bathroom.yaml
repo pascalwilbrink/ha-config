@@ -1,0 +1,3 @@
+name: Badkamer
+entities:
+  - light.lichten_badkamer

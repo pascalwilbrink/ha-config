@@ -1,0 +1,3 @@
+name: Woonkamer
+entities:
+  - light.lighten_woonkamer

@@ -1,8 +1,5 @@
 default_config:
 
-tts:
-  - platform: google_translate
-
 # Home Assistant
 homeassistant: !include core/homeassistant.yaml
 
@@ -13,41 +10,37 @@ lovelace:
 # Http
 http:
 
-# Conversation
-conversation:
-
 # Weather
 weather:
   - platform: darksky
     api_key: !secret darksky_api_key
     mode: daily
 
+# Conversation
+conversation:
+
+# TTS
+tts:
+  - platform: google_translate
+
 # Integrations
 spotify: !include integrations/spotify/spotify.yaml
 telegram_bot: !include integrations/telegram/telegram.yaml
 google: !include integrations/google/google.yaml
+spotcast: !include integrations/spotcast/spotcast.yaml
 
 # Core
-group: !include groups/group.yaml
+group: !include_dir_named groups/
 automation: !include_dir_list automations/
 script: !include scripts/script.yaml
 scene: !include_dir_list scenes/
 zone: !include_dir_list zones/
-calendar: !include calendars/calendar.yaml
-input_boolean: !include input_booleans/input_boolean.yaml
-notify: !include notifiers/notify.yaml
+calendar: !include_dir_list calendars/
+input_boolean: !include_dir_named input_booleans/
+input_datetime: !include_dir_named input_datetimes/
+notify: !include_dir_list notifiers/
 sensor: !include_dir_list sensors/
 light: !include_dir_list lights/
-binary_sensor: !include_dir_list binary_sensors
-media_player: !include media_players/media_player.yaml
+binary_sensor: !include_dir_list binary_sensors/
+media_player: !include_dir_list media_players/
 person: !include persons/person.yaml
-
-spotcast:
-  username: !secret spotify_username
-  password: !secret spotify_password
-  
-input_datetime:
-  alarm_time:
-    name: "Wekker"
-    has_date: false
-    has_time: true

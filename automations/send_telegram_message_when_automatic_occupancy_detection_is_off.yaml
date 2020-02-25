@@ -1,11 +1,11 @@
-alias: 'Send Telegram message when leaving and automatic presence detection is off'
+alias: 'Send Telegram message when leaving and automatic home occupancy detection is off'
 trigger:
   - platform: state
     entity_id: device_tracker.htc_u12
     from: 'home'
 condition:
   - condition: state
-    entity_id: input_boolean.automatic_presence
+    entity_id: input_boolean.automatic_home_occupancy
     state: 'off'
 action:
   service: telegram_bot.send_message
@@ -13,5 +13,5 @@ action:
     message: 'Aanwezigheidsdetectie is uitgeschakeld. Inschakelen?'
     target: !secret telegram_chat_id
     inline_keyboard: 
-      - 'Aanzetten:/AUTOMATIC_PRESENCE_ON'
-      - 'Uitgeschakeld laten:/AUTOMATIC_PRESENCE_OFF'
+      - 'Aanzetten:/AUTOMATIC_HOME_OCCUPANCY_ON'
+      - 'Uitgeschakeld laten:/AUTOMATIC_HOME_OCCUPANCY_OFF'
