@@ -18,6 +18,6 @@ action:
 
   - service: spotcast.start
     data:
-      uri: "{{ states('input_text.alarm_player') }}"
+      uri: 'spotify:playlist:37i9dQZEVXcMWTflsxeSlz'
       transfer_playback: false
       entity_id: media_player.slaapkamer
