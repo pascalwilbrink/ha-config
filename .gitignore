@@ -30,6 +30,7 @@
 !core
 !switches
 !input_datetimes
+!input_texts
 
 # Ignore folders.
 .storage

@@ -38,6 +38,7 @@ zone: !include_dir_list zones/
 calendar: !include_dir_list calendars/
 input_boolean: !include_dir_named input_booleans/
 input_datetime: !include_dir_named input_datetimes/
+input_text: !include_dir_named input_texts/
 notify: !include_dir_list notifiers/
 sensor: !include_dir_list sensors/
 light: !include_dir_list lights/
