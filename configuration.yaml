@@ -46,5 +46,5 @@ light: !include_dir_list lights/
 binary_sensor: !include_dir_list binary_sensors/
 media_player: !include_dir_list media_players/
 person: !include persons/person.yaml
-switch: !include_dir_named switches/
+switch: !include_dir_list switches/
 weather: !include_dir_list weather/
