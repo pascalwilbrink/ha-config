@@ -1,0 +1,19 @@
+platform: template
+sensors:
+  home_occupancy:
+    device_class: occupancy
+    friendly_name: 'Livingroom occupied'
+    entity_id:
+      - media_player.android_tv
+      - media_player.living_room
+    value_template: >-
+      {{ 
+          (
+            not is_state('media_player.android_tv', 'unavailable')
+          and
+            not is_sate('media_player.android_tv', 'off')
+          )
+          or
+            not is_state('media_player.living_room', 'playing')
+      }}
+  

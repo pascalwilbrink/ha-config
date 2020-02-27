@@ -14,12 +14,6 @@ frontend:
 # Http
 http:
 
-# Weather
-weather:
-  - platform: darksky
-    api_key: !secret darksky_api_key
-    mode: daily
-
 # Conversation
 conversation:
 
@@ -49,3 +43,5 @@ light: !include_dir_list lights/
 binary_sensor: !include_dir_list binary_sensors/
 media_player: !include_dir_list media_players/
 person: !include persons/person.yaml
+switch: !include_dir_named switches/
+weather: !include_dir_list weather/

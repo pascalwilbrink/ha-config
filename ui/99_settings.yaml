@@ -2,7 +2,7 @@ title: Settings
 icon: mdi:settings
 cards:
   - type: entities
-    title: States
+    title: Occupances
     show_header_toggle: false
     entities:
       - entity: input_boolean.automatic_home_occupancy
@@ -17,3 +17,18 @@ cards:
         name: '[Telegram callback]Turn on automatic home occupancy detection'
       - entity: automation.send_telegram_message_when_leaving_and_automatic_home_occupancy_detection_is_off
         name: send Telegram message when leaving and automatic home occupancy detection is off
+
+  - type: entities
+    title: Overrides
+    entities:
+      - entity: input_boolean.override_home_occupancy
+        name: Home occupancy
+        icon: mdi:home-map-marker
+      - entity: input_boolean.override_livingroom_occupancy
+        name: Livingroom occupancy
+        icon: mdi:sofa
+      - entity: input_boolean.override_bedroom_occupancy
+        name: Bedroom occupancy
+      - entity: input_boolean.override_bathroom_occupancy
+        name: Bathroom occupancy
+        icon: mdi:shower
