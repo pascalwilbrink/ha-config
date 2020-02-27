@@ -8,7 +8,16 @@ cards:
       - entity: input_boolean.automatic_home_occupancy
         name: Automatic Home Occupancy Detection
         icon: mdi:home-map-marker
-  
+      - entity: input_boolean.automatic_livingroom_occupancy
+        name: Automatic Livingroom Occupancy Detection
+        icon: mdi:sofa
+      - entity: input_boolean.automatic_bathroom_occupancy
+        name: Automatic Bathroom Occupancy Detection
+        icon: mdi:shower
+      - entity: input_boolean.automatic_bedroom_occupancy
+        name: Automatic Bedroom Occupancy Detection
+        icon: mdi:bed
+
   - type: entities
     title: Automations
     show_header_toggle: false
