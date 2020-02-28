@@ -6,12 +6,12 @@ before_install:
 - touch home-assistant_v2.db
 - touch home-assistant.log
 - HA_VERSION=$(<.HA_VERSION)
-- rm -rf integrations/spotcast/spotcast.yaml
-- touch integrations/spotcast/spotcast.yaml
-- echo "[]" >> integrations/spotcast/spotcast.yaml
-- rm -rf lights/tv_ambilight.yaml
-- rm -rf sensors/p2000.yaml
-- rm -rf sensors/trakt.yaml
+- rm -rf integrations/spotcast/spotcast.yaml # Remove spotcast (HACS integration)
+- rm -rf lights/tv_ambilight.yaml # Remove Ambilight (HACS integration)
+- rm -rf sensors/p2000.yaml # Remove P2000 (HACS integration)
+- rm -rf sensors/trakt.yaml # Remove Trakt (HACS integration)
+- sed '/spotcast:/d' ./configuration.yaml > configuration_tmp.yaml
+- mv configuration_tmp.yaml configuration.yaml
 install:
 - pip3 install homeassistant
 script:
