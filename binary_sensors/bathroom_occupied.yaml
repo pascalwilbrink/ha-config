@@ -1,6 +1,6 @@
 platform: template
 sensors:
-  home_occupancy:
+  bathroom_occupied:
     device_class: occupancy
     friendly_name: 'Bathroom occupied'
     entity_id:

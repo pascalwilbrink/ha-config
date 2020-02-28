@@ -1,6 +1,6 @@
 platform: template
 sensors:
-  home_occupancy:
+  livingroom_occupied:
     device_class: occupancy
     friendly_name: 'Livingroom occupied'
     entity_id:
@@ -8,12 +8,16 @@ sensors:
       - media_player.living_room
     value_template: >-
       {{ 
+          (is_state('input_boolean.automatic_livingroom_occupancy', 'off') and is_state('input_boolean.override_livingroom_occupancy')
+            or
           (
-            not is_state('media_player.android_tv', 'unavailable')
-          and
-            not is_sate('media_player.android_tv', 'off')
+            (
+              not is_state('media_player.android_tv', 'unavailable')
+              and
+              not is_sate('media_player.android_tv', 'off')
+            )
+            or
+              not is_state('media_player.living_room', 'playing')
           )
-          or
-            not is_state('media_player.living_room', 'playing')
       }}
   

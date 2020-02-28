@@ -32,6 +32,7 @@
 !input_datetimes
 !input_texts
 !weather
+!timers
 
 # Ignore folders.
 .storage

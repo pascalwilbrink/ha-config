@@ -1,6 +1,6 @@
 platform: template
 sensors:
-  home_occupancy:
+  home_occupied:
     device_class: occupancy
     friendly_name: 'Home occupied'
     entity_id:
