@@ -24,6 +24,8 @@ conversation:
 tts:
   - platform: google_translate
 
+# HACS
+
 # Integrations
 spotify: !include integrations/spotify/spotify.yaml
 telegram_bot: !include integrations/telegram/telegram.yaml
