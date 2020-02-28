@@ -6,7 +6,8 @@ before_install:
 - touch home-assistant_v2.db
 - touch home-assistant.log
 - HA_VERSION=$(<.HA_VERSION)
-- rm -rf integrations/spotcast
+- rm -rf integrations/spotcast/spotcast.yaml
+- touch integrations/spotcast.yaml
 - rm -rf lights/tv_ambilight.yaml
 - rm -rf sensors/p2000.yaml
 - rm -rf sensors/trakt.yaml
