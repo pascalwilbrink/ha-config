@@ -8,7 +8,9 @@ sensors:
       - media_player.living_room
     value_template: >-
       {{ 
-          (is_state('input_boolean.automatic_livingroom_occupancy', 'off') and is_state('input_boolean.override_livingroom_occupancy')
+          (
+            is_state('input_boolean.automatic_livingroom_occupancy', 'off') and is_state('input_boolean.override_livingroom_occupancy')
+          )
             or
           (
             (
