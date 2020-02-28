@@ -3,14 +3,6 @@ python:
 - '3.6'
 before_install:
 - mv .travis.secrets.yaml secrets.yaml
-- mkdir custom_components
-- cd custom_components
-- git clone https://github.com/custom-components/hacs.git hacs_temp
-- cd hacs_temp
-- cd ../
-- cp -r hacs_temp/custom_components/hacs hacs
-- rm -rf hacs_temp
-- cd ../
 - touch home-assistant_v2.db
 - touch home-assistant.log
 - HA_VERSION=$(<.HA_VERSION)
