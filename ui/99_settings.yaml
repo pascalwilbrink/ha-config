@@ -16,7 +16,7 @@ cards:
         icon: mdi:shower
       - entity: input_boolean.automatic_bedroom_occupancy
         name: Automatic Bedroom Occupancy Detection
-        icon: mdi:bed
+        icon: mdi:bed-empty
 
   - type: entities
     title: Automations
@@ -38,6 +38,7 @@ cards:
         icon: mdi:sofa
       - entity: input_boolean.override_bedroom_occupancy
         name: Bedroom occupancy
+        icon: mdi:bed-empty
       - entity: input_boolean.override_bathroom_occupancy
         name: Bathroom occupancy
         icon: mdi:shower

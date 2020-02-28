@@ -9,6 +9,8 @@
 !*.md
 !.HA_VERSION
 !VERSION
+!custom_components
+!custom_components/*
 
 !ui
 !automations

@@ -26,3 +26,17 @@
     ignore_availability: true
     name: Feestdagen in Nederland
     track: true
+
+- cal_id: m9u036sckaea0t2olibslg4bvk@group.calendar.google.com
+  entities:
+  - device_id: dev_vision_agenda
+    ignore_availability: true
+    name: Dev-Vision Agenda
+    track: true
+
+- cal_id: c07217oj8j4kpjmns297ga8tbo@group.calendar.google.com
+  entities:
+  - device_id: dmec_project
+    ignore_availability: true
+    name: DMEC Project
+    track: true
