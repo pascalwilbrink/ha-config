@@ -10,5 +10,5 @@ sensors:
       {{    
           (is_state('input_boolean.automatic_bedroom_occupancy', 'on') and is_state('device_tracker.pascal_htcu12', 'home'))
         or 
-          (is_state('input_boolean.automatic_bedroom_occupancy', 'off') and is_state('input_boolean.override_bedroom_occupancy'))
+          (is_state('input_boolean.automatic_bedroom_occupancy', 'off') and is_state('input_boolean.override_bedroom_occupancy', 'on'))
       }}
