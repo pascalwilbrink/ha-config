@@ -18,8 +18,7 @@ sensors:
               and
               not is_sate('media_player.android_tv', 'off')
             )
-            or
-              not is_state('media_player.living_room', 'playing')
+            or is_state('media_player.living_room', 'playing')
           )
       }}
   

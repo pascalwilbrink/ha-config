@@ -42,3 +42,11 @@ cards:
       - entity: input_boolean.override_bathroom_occupancy
         name: Bathroom occupancy
         icon: mdi:shower
+
+  - type: glance
+    title: Travis
+    entities:
+      - entity: sensor.pascalwilbrink_ha_config_last_build_finished_at
+        name: Last build
+      - entity: sensor.pascalwilbrink_ha_config_last_build_state
+        name: State

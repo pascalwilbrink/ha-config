@@ -107,9 +107,6 @@ cards:
     entities:
       - entity: person.pascal_wilbrink
         name: Pascal
-      - entity: binary_sensor.home_occupancy
-        name: Home Occupancy
-        icon: mdi:home-map-marker
 
   - type: custom:upcoming-media-card
     entity: sensor.trakt_upcoming_calendar
