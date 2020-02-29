@@ -1,0 +1,15 @@
+title: Overview
+icon: mdi:eye-outline
+cards:
+  - type: markdown
+    content: >
+      ## Version
+      {{ states('sensor.current_version') }}
+
+  - type: glance
+    title: Travis
+    entities:
+      - entity: sensor.pascalwilbrink_ha_config_last_build_finished_at
+        name: Last build
+      - entity: sensor.pascalwilbrink_ha_config_last_build_state
+        name: State
