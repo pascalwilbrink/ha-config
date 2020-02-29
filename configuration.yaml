@@ -20,6 +20,9 @@ api:
 # Conversation
 conversation:
 
+# Sun
+sun:
+
 # TTS
 tts:
   - platform: google_translate
