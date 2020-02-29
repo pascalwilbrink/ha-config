@@ -4,7 +4,8 @@ sensors:
     device_class: occupancy
     friendly_name: 'Bathroom occupied'
     entity_id:
-      - input_boolean.bathroom_occupied
+      - input_boolean.automatic_bathroom_occupancy
+      - input_boolean.override_bathroom_occupancy
     value_template: >-
       {{    
           (is_state('input_boolean.automatic_bathroom_occupancy', 'on') and is_state('device_tracker.pascal_htcu12', 'home'))

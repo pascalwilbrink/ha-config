@@ -4,7 +4,8 @@ sensors:
     device_class: occupancy
     friendly_name: 'Bedroom occupied'
     entity_id:
-      - input_boolean.bedroom_occupied
+      - input_boolean.automatic_bedroom_occupancy
+      - input_boolean.override_bedroom_occupancy
     value_template: >-
       {{    
           (is_state('input_boolean.automatic_bedroom_occupancy', 'on') and is_state('device_tracker.pascal_htcu12', 'home'))

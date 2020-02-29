@@ -6,6 +6,8 @@ sensors:
     entity_id:
       - media_player.android_tv
       - media_player.living_room
+      - input_boolean.automatic_livingroom_occupancy
+      - input_boolean.override_livingroom_occupancy
     value_template: >-
       {{ 
           (
