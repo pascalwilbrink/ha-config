@@ -108,6 +108,17 @@ cards:
       - entity: person.pascal_wilbrink
         name: Pascal
 
+  - type: glance
+    entities:
+      - entity: binary_sensor.home_occupied
+        name: Home
+      - entity: binary_sensor.livingroom_occupied
+        name: Livingroom
+      - entity: binary_sensor.bathroom_occupied
+        name: Bathroom
+      - entity: binary_sensor.bedroom_occupied
+        name: Bedroom
+
   - type: custom:upcoming-media-card
     entity: sensor.trakt_upcoming_calendar
     title: Upcoming
