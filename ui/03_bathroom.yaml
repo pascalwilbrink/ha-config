@@ -1,4 +1,20 @@
 title: Badkamer
 cards:
+  - type: entities
+    title: Wasmachine
+    entities:
+      - type: custom:slider-entity-row
+        entity: input_number.washing_machine_ready_in
+        min: 2
+        name: Ready in
+        show_icon: false
+      - type: custom:button-entity-row
+        buttons:
+          - name: start
+
+      - entity: input_select.washing_machine_mode
+        name: Mode
+        show_icon: false
+        
   - type: light
     entity: light.badkamer
