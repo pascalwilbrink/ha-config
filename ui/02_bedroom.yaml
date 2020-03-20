@@ -3,6 +3,13 @@ cards:
   - type: light
     entity: light.slaapkamer
 
+  - type: glance
+    title: Wasmachine
+    entities:
+      -  entity: input_select.washing_machine_mode
+         name: Mode
+      - input_number.washing_machine_ready_in
+
   - type: custom:mini-media-player
     entity: media_player.slaapkamer
     icon: mdi:spotify
