@@ -4,29 +4,19 @@ cards:
     entity: light.slaapkamer
 
   - type: custom:mini-media-player
-    entity: media_player.living_room
+    entity: media_player.slaapkamer
     icon: mdi:spotify
     artwork: cover
 
   - type: glance
-    title: PS4
+    title: Wekker
     entities:
-      - entity: media_player.playstation_4
-        name: Aan
+      - entity: input_boolean.alarm_on
+        name: 'Aan'
+        icon: mdi:alarm
         show_state: false
-        icon: mdi:power
         tap_action:
-          service: media_player.turn_on
-          action: call-service
-          service_data: 
-            entity_id: media_player.playstation_4
-
-      - entity: media_player.playstation_4
-        name: Uit
-        show_state: false
-        icon: mdi:power-cycle
-        tap_action:
-          service: media_player.turn_off
-          action: call-service
-          service_data:
-            entity_id: media_player.playstation_4
+          action: toggle
+      - entity: input_datetime.alarm_time
+        name: 'Tijd'
+        icon: mdi:clock-outline

@@ -12,7 +12,18 @@ cards:
         name: Deur woonkamer
       - entity: binary_sensor.motion_sensor_2
         name: Beweging gang
-                
+        
+  - type: entities
+    title: Timers
+    entities:
+      - type: custom:fold-entity-row
+        head:
+          type: section
+          label: Afwasmachine
+        entities:
+          - entity: timer.dishes
+            name: Afwasmachine
+           
   - type: glance
     title: Lichten
     columns: 3
