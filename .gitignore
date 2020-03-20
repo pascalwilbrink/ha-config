@@ -35,6 +35,8 @@
 !input_texts
 !weather
 !timers
+!input_numbers
+!input_selects
 
 # Ignore folders.
 .storage

@@ -34,21 +34,31 @@ google: !include integrations/google/google.yaml
 spotcast: !include integrations/spotcast/spotcast.yaml
 
 # Core
-group: !include_dir_named groups/
 automation: !include_dir_list automations/
 script: !include scripts/script.yaml
 scene: !include_dir_list scenes/
+timer: !include_dir_named timers/
+
 zone: !include_dir_list zones/
+group: !include_dir_named groups/
+person: !include_dir_list persons/
+
+notify: !include_dir_list notifiers/
+media_player: !include_dir_list media_players/
 calendar: !include_dir_list calendars/
+weather: !include_dir_list weather/
+switch: !include_dir_list switches/
+
+# Lights
+light: !include_dir_list lights/
+
+# Sensors
+sensor: !include_dir_list sensors/
+binary_sensor: !include_dir_list binary_sensors/
+
+# Helpers
 input_boolean: !include_dir_named input_booleans/
 input_datetime: !include_dir_named input_datetimes/
 input_text: !include_dir_named input_texts/
-notify: !include_dir_list notifiers/
-sensor: !include_dir_list sensors/
-light: !include_dir_list lights/
-binary_sensor: !include_dir_list binary_sensors/
-media_player: !include_dir_list media_players/
-person: !include_dir_list persons/
-switch: !include_dir_list switches/
-weather: !include_dir_list weather/
-timer: !include_dir_named timers/
+input_number: !include_dir_named input_numbers/
+input_select: !include_dir_named input_selects/

@@ -1,0 +1,6 @@
+name: Washing machine mode
+options:
+  - eco
+  - normal
+  - speed
+initial: eco
