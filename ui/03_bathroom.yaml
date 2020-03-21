@@ -8,9 +8,13 @@ cards:
         min: 2
         name: Ready in
         show_icon: false
+
+      
       - type: custom:button-entity-row
         buttons:
           - name: start
+            icon: mdi:clock-start
+            service: timer.start
 
       - entity: input_select.washing_machine_mode
         name: Mode

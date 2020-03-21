@@ -40,3 +40,10 @@
     ignore_availability: true
     name: DMEC Project
     track: true
+
+- cal_id: g0rdor8lonmqgeucsdginvmtj0@group.calendar.google.com
+  entities:
+  - device_id: werk
+    ignore_availability: true
+    name: Werk
+    track: true
