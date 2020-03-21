@@ -3,6 +3,12 @@ trigger:
   - platform: state
     entity_id: binary_sensor.wake_up_alarm
     to: 'on'
+
+condition:
+  - condition: state
+    entity_id: binary_sensor.work_today
+    state: 'on'
+
 action:
   - service: light.turn_on
     data:
