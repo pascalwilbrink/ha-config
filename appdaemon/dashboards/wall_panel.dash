@@ -18,7 +18,6 @@ global_parameters:
             step: 5
 
 ## Layout
-
 layout:
     - include: top_panel
     - include: middle_panel

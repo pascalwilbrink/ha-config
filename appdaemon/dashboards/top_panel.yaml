@@ -2,5 +2,13 @@ weather:
   widget_type: weather
   units: "&deg:C"
 
+clock:
+  widget_type: clock
+  time_format: 24hr
+  show_seconds: 1
+  widget_style: "background: white"
+  date_style: "color: black"
+  time_style: "color: green"
+
 layout:
-  - clock.clock(2x1), weather(2x2)
+  - clock(2x1), weather(2x2)
