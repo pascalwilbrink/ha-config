@@ -1,0 +1,27 @@
+##
+## Styles
+##
+
+white: "#fff"
+red: "#ff0055"
+green: "#aaff00"
+blue: "#00aaff"
+purple: "#aa00ff"
+yellow: "#ffff00"
+orange: "#ffaa00"
+
+gray_dark: "#444"
+gray_medium: "#666"
+gray_light: "#888"
+
+##Page and widget defaults
+background_style: ""
+text_style: ""
+
+##These are used for icons and indicators
+style_inactive: "color: $gray_light"
+style_active: "color: gold"
+style_active_warn: "color: gold"
+style_info: "color: gold; font-weight: 500; font-size: 250%"
+style_title: "color: gold; font-weight: 900"
+style_title2: "color: $white"
