@@ -6,7 +6,7 @@ time_zone: Europe/Amsterdam
 auth_providers:
   - type: trusted_networks
     trusted_networks:
-      - 192.168.0.0/24
+      - 192.168.2.0/24
       - fd00::/8
     allow_bypass_login: true
   - type: homeassistant
