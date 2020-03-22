@@ -21,11 +21,16 @@ global_parameters:
 
 clock:
     widget_type: clock
+    date_format_country: "nl"
+    time_format: "24hr"
+    date_format_options:
+        weekday: "short"
+        day: "numeric"
+        month: "numeric"
 
 weather:
     widget_type: weather
     units: "&deg;C"
-
 
 ## Layout
 layout:
