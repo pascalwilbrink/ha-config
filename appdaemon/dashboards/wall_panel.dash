@@ -17,23 +17,9 @@ global_parameters:
         media_player:
             step: 5
 
-## Widgets 
-
-clock:
-    widget_type: clock
-    date_format_country: "nl"
-    time_format: "24hr"
-    date_format_options:
-        weekday: "short"
-        day: "numeric"
-        month: "numeric"
-
-weather:
-    widget_type: weather
-    units: "&deg;C"
-    show_forecast: 0
-
 ## Layout
+
 layout:
-    - clock (2x1)
-    - weather (2x2)
+    - include: top_panel
+    - include: middle_panel
+    - include: bottom_panel

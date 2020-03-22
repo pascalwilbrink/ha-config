@@ -1,0 +1,6 @@
+weather:
+  widget_type: weather
+  units: "&deg:C"
+
+layout:
+  - clock.clock(2x1), weather(2x2)
