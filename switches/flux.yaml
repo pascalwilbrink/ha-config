@@ -2,4 +2,3 @@ platform: flux
 lights:
   - light.woonkamer
   - light.eettafel
-  - light.slaapkamer
