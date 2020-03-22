@@ -2,13 +2,32 @@
 ## Main arguments, all optional
 ##
 title: Wall Panel
+
 widget_dimensions: [120, 120]
 widget_margins: [5, 5]
+widget_size: [1, 1]
 columns: 8
 
-label:
-    widget_type: label
-    text: Hello World
+global_parameters:
+    use_comma: 0
+    precision: 1
+    use_hass_icon: 1
+    namespace: default
+    devices:
+        media_player:
+            step: 5
 
+## Widgets 
+
+clock:
+    widget_type: clock
+
+weather:
+    widget_type: weather
+    units: "&deg;C"
+
+
+## Layout
 layout:
-    - label(2x2)
+    - clock (2x1)
+    - weather (2x2)
