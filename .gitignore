@@ -4,7 +4,8 @@
 
 # You can whitelist files/folders with !, these will not be ignored.
 !*.yaml
-!*.yml*.dash
+!*.yml
+!*.dash
 !.gitignore
 !*.md
 !.HA_VERSION
