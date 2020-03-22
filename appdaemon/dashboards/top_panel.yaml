@@ -11,4 +11,4 @@ clock:
   time_style: "color: green"
 
 layout:
-  - clock(2x1), weather(2x2)
+  - clock(2x1)
