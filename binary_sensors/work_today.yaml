@@ -12,4 +12,3 @@ sensors:
             is_state('binary_sensor.workday_sensor', 'on') and is_state('calendar.werk', 'on')
           )
       }}
-  

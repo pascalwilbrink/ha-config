@@ -23,4 +23,3 @@ sensors:
             or is_state('media_player.living_room', 'playing')
           )
       }}
-  

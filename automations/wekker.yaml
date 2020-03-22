@@ -1,4 +1,5 @@
 alias: 'Wekker'
+
 trigger:
   - platform: state
     entity_id: binary_sensor.wake_up_alarm
