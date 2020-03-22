@@ -18,7 +18,7 @@ sensors:
             (
               not is_state('media_player.android_tv', 'unavailable')
               and
-              not is_sate('media_player.android_tv', 'off')
+              not is_state('media_player.android_tv', 'off')
             )
             or is_state('media_player.living_room', 'playing')
           )

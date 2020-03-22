@@ -2,10 +2,10 @@ alias: 'Turn on livingroom light when tv turned off at night'
 
 trigger:
   - platform: state
-    entity_id: binary_sensor.home_occupancy
+    entity_id: media_player.android_tv
     to: 'off'
 
 action:
-  - service: light.turn_off
+  - service: light.turn_on
     data:
-      entity_id: light.lichten
+      entity_id: light.woonkamer

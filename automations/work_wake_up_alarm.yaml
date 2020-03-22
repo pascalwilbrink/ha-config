@@ -1,4 +1,4 @@
-alias: 'Wekker'
+alias: 'Werk wekker'
 
 trigger:
   - platform: state
@@ -21,7 +21,7 @@ action:
   - service: media_player.volume_set
     data:
       entity_id: media_player.slaapkamer
-      volume_level: .4
+      volume_level: .35
 
   - service: spotcast.start
     data:
