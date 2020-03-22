@@ -1,7 +1,9 @@
 alias: 'Set Night Theme'
+
 trigger:
   - platform: time
     at: '20:00:00'
+
 action:
   - service: frontend.set_theme
     data:

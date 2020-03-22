@@ -1,12 +1,15 @@
 alias: 'Send Telegram message when leaving and automatic home occupancy detection is off'
+
 trigger:
   - platform: state
     entity_id: device_tracker.htc_u12
     from: 'home'
+
 condition:
   - condition: state
     entity_id: input_boolean.automatic_home_occupancy
     state: 'off'
+
 action:
   service: telegram_bot.send_message
   data:

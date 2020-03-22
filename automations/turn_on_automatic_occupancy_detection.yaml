@@ -1,13 +1,16 @@
 alias: 'Turn on automatic home occupancy detection'
+
 trigger:
   - platform: event
     event_type: telegram_callback
     event_data:
       data: '/AUTOMATIC_HOME_OCCUPANCY_ON'
+
 condition:
   - condition: state
     entity_id: input_boolean.automatic_home_occupancy
     state: 'off'
+
 action:
   - service: input_boolean.turn_on
     data:

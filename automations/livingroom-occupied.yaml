@@ -1,4 +1,5 @@
 alias: 'Living Room occupied'
+
 trigger:
   - platform: template
     value_template: >-
@@ -9,6 +10,7 @@ trigger:
   - platform: template
     value_template: >-
       {{ not is_state('media_player.android_tv', 'off') }}
+
 action:
   - service: input_boolean.turn_on
     data:

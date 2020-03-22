@@ -1,7 +1,9 @@
 alias: 'Set Day Theme'
+
 trigger:
   - platform: time
     at: '06:00:00'
+
 action:
   - service: frontend.set_theme
     data:

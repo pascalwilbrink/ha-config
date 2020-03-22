@@ -1,8 +1,10 @@
 alias: 'Turn off all the lights when home occupancy is off'
+
 trigger:
   - platform: state
     entity_id: binary_sensor.home_occupancy
     to: 'off'
+
 action:
   - service: light.turn_off
     data:
