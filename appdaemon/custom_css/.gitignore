@@ -2,3 +2,5 @@
 !ox/*
 !ox/*.css
 !ox/*.yaml
+!ox/img
+!ox/img/*
