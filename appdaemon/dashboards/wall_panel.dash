@@ -31,6 +31,7 @@ clock:
 weather:
     widget_type: weather
     units: "&deg;C"
+    show_forecast: 0
 
 ## Layout
 layout:
