@@ -21,4 +21,5 @@ global_parameters:
 layout:
     - include: top_panel
     - include: middle_panel
+    - include: mode_panel
     - include: bottom_panel
