@@ -1,1 +1,32 @@
+home:
+    widget_type: navigate
+    dashboard: main
+    icon_active: fa-home
+    icon_inactive: fa-home
+
+livingroom:
+    widget_type: navigate
+    dashboard: livingroom
+    icon_active: fa-couch
+    icon_inactive: fa-couch
+
+bathroom:
+    widget_type: navigate
+    dashboard: bathroom
+    icon_active: fa-shower
+    icon_inactive: fa-shower
+
+bedroom:
+    widget_type: navigate
+    dashboard: bedroom
+    icon_active: fa-bed
+    icon_inactive: fa-bed
+
+music:
+    widget_type: navigate
+    dashboard: music
+    icon_active: fa-music
+    icon_inactive: fa-music
+
 layout:
+    - home(2x1), livingroom(2x1), bathroom(2x1), bedroom(2x1), music(2x1)

@@ -35,4 +35,4 @@ night:
     script: script.night
 
 layout:
-    - morning(2x1), day(2x1), evening(2x1), night(2x1)
+    - morning(4x1), spacer(2x1), day(4x1), spacer(2x1), evening(4x1), spacer(2x1), night(4x1)

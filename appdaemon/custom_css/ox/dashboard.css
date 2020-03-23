@@ -41,3 +41,20 @@ body::after {
 	vertical-align:middle;
 	background-color: rgba(0, 0, 0, 0.5);
 }
+
+
+.widget-baseclock-default-clock {
+    background: none;
+    vertical-align: top;
+    text-align: left;
+    padding-left: 1em;
+}
+
+.widget-baseclock-default-clock .date {
+    margin: 0;
+    font-size: 3em;
+}
+
+.widget-baseclock-default-clock .time {
+    margin: 0;
+}

@@ -1,0 +1,23 @@
+##
+## Main arguments, all optional
+##
+title: Wall Panel
+
+widget_dimensions: [120, 120]
+widget_margins: [25, 25]
+widget_size: [1, 1]
+columns: 8
+
+global_parameters:
+    use_comma: 0
+    precision: 1
+    use_hass_icon: 1
+    devices:
+        media_player:
+            step: 5
+
+## Layout
+layout:
+    - include: top_panel
+    - include: bedroom_panel
+    - include: bottom_panel
