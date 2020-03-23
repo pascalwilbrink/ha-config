@@ -39,7 +39,5 @@ body::after {
 	width:100%;
 	display:table-cell;
 	vertical-align:middle;
-	/*border-radius: 12px; */
 	background-color: rgba(0, 0, 0, 0.5);
-	/*background-color: #161d23; */
 }

@@ -6,6 +6,7 @@ appdaemon:
   longitude: 4.899431
   elevation: 2
   time_zone: Europe/Amsterdam
+  fa4compatibility: 1
   disable_apps: 1
   plugins:
     HASS:
