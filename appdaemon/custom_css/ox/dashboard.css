@@ -9,3 +9,21 @@ body::after {
     position: absolute;
     z-index: -1; 
 }
+
+.gs-w {
+	width:100%;
+	display:table;
+	cursor:pointer;
+	z-index: auto !important;
+}
+
+.widget {
+	padding:0px 0px;
+	text-align:center;
+	width:100%;
+	display:table-cell;
+	vertical-align:middle;
+	/*border-radius: 12px; */
+	background-color: rgba(0, 0, 0, 0.5);
+	/*background-color: #161d23; */
+}
