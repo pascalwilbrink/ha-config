@@ -2,7 +2,7 @@ alias: 'House mode Day'
 description: 'Turns on house mode day'
 sequence:
   - alias: Turn on House mode day
-    service: input_select.house_mode
+    service: input_select.select_option
     data:
       entity_id: input_select.house_mode
       option: day
