@@ -1,6 +1,5 @@
 alias: 'House mode Day'
 description: 'Turns on house mode day'
-fields:
 sequence:
   - alias: Turn on House mode day
     service: input_select.house_mode

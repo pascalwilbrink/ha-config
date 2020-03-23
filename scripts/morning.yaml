@@ -1,6 +1,5 @@
 alias: 'House mode Morning'
 description: 'Turns on house mode morning'
-fields:
 sequence:
   - alias: Turn on House mode morning
     service: input_select.house_mode

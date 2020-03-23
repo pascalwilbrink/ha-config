@@ -1,6 +1,5 @@
 alias: 'Away'
 description: 'Turns on the away scene'
-fields:
 sequence:
   - event: LOGBOOK_ENTRY
     event_data:
