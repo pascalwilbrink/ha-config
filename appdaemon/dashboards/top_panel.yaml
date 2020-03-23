@@ -6,9 +6,11 @@ clock:
   widget_type: clock
   time_format: 24hr
   show_seconds: 1
-  widget_style: "background: white"
-  date_style: "color: black"
-  time_style: "color: green"
+  date_format_country: nl
+  date_format_options:
+    weekday: short
+    day: numeric
+    month: numeric
 
 layout:
   - clock(2x1)
