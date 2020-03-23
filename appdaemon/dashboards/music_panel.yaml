@@ -3,4 +3,4 @@ media_player:
   entity:  media_player.living_room
 
 layout:
-  - media_player(2x1)
+  - media_player(8x1)
