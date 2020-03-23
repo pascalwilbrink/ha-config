@@ -1,8 +1,8 @@
 media_player:
   widget_type: media_player
   entity:  media_player.living_room
-  icon_up: 
-  icon_down:
+  icon_up: fa-none
+  icon_down: fa-none
 
 layout:
   - media_player(16x1)
