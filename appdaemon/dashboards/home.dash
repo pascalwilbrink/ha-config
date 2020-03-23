@@ -3,7 +3,7 @@
 ##
 title: Wall Panel
 
-widget_dimensions: [120, 80]
+widget_dimensions: [80, 120]
 widget_margins: [25, 25]
 widget_size: [1, 1]
 columns: 16
