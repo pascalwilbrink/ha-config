@@ -1,4 +1,3 @@
-body {
-    background: url('/custom_css/ox/img/bg.png');
+.gridster {
+    background: url(/custom_css/ox/img/bg.png);
 }
-
