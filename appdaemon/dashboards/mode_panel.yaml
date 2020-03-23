@@ -1,6 +1,6 @@
 morning:
     widget_type: mode
-    icon_on: fa-clock-o
+    icon_on: fa-clock
     icon_off: fa-clock-o
     title: Morning
     entity: input_select.house_mode
@@ -10,7 +10,7 @@ morning:
 day:
     widget_type: mode
     title: Day
-    icon_on: fa-sun-o
+    icon_on: fa-sun
     icon_off: fa-sun-o
     entity: input_select.house_mode
     mode: Day
@@ -19,7 +19,7 @@ day:
 evening:
     widget_type: mode
     title: Evening
-    icon_on: fa-moon-o
+    icon_on: fa-moon
     icon_off: fa-moon-o
     entity: input_select.house_mode
     mode: Evening
@@ -28,7 +28,7 @@ evening:
 night:
     widget_type: mode
     title: Night
-    icon_on: fa-star-o
+    icon_on: fa-star
     icon_off: fa-star-o
     entity: input_select.house_mode
     mode: Night
