@@ -1,0 +1,7 @@
+name: House mode
+options:
+  - morning
+  - day
+  - evening
+  - night
+initial: day
