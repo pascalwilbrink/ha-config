@@ -1,6 +1,6 @@
 home:
     widget_type: navigate
-    dashboard: main
+    dashboard: home
     icon_active: fa-home
     icon_inactive: fa-home
 
