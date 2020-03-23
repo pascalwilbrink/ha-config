@@ -1,3 +1,11 @@
-.gridster {
-    background: url(/custom_css/ox/img/bg.png);
+body::after {
+    background-image: url(/custom_css/ox/img/bg.png);
+    background-size:cover;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
 }
