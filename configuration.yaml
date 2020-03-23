@@ -35,7 +35,7 @@ spotcast: !include integrations/spotcast/spotcast.yaml
 
 # Core
 automation: !include_dir_list automations/
-script: !include_dir_list scripts/
+script: !include_dir_named scripts/
 scene: !include_dir_list scenes/
 timer: !include_dir_named timers/
 
