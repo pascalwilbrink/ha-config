@@ -1,0 +1,10 @@
+alias: 'House mode Evening'
+description: 'Turns on house mode evening'
+fields:
+sequence:
+  - alias: Turn on House mode evening
+    service: input_select.house_mode
+    data:
+      entity_id: input_select.house_mode
+      option: evening
+
