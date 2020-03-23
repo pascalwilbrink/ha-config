@@ -1,1 +1,6 @@
+media_player:
+  widget_type: media_player
+  entity:  media_player.living_room
+
 layout:
+  - media_player(2x1)
