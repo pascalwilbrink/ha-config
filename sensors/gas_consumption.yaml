@@ -1,0 +1,4 @@
+platform: mqtt
+name: gas consumption
+state_topic: p1monitor/smartmeter/consumption_gas_m3
+unit_of_measurement: M3

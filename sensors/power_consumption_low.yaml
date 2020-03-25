@@ -1,0 +1,4 @@
+platform: mqtt
+name: power consumption low
+state_topic: p1monitor/smartmeter/consumption_kwh_low
+unit_of_measurement: kWh
