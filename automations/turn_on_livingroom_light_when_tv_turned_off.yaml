@@ -5,6 +5,15 @@ trigger:
     entity_id: media_player.android_tv
     to: 'off'
 
+condition:
+  - condition: state
+    entity_id: sun.sun
+    state: 'below_horizon'
+
+  - condition: state
+    entity: binary_sensor.livingroom_occupied
+    state: 'on'
+
 action:
   - service: light.turn_on
     data:
