@@ -6,13 +6,15 @@ trigger:
     to: 'off'
 
 condition:
-  - condition: state
-    entity_id: sun.sun
-    state: 'below_horizon'
+  condition: and
+  conditions:
+    - condition: state
+      entity_id: sun.sun
+      state: 'below_horizon'
 
-  - condition: state
-    entity: binary_sensor.livingroom_occupied
-    state: 'on'
+    - condition: state
+      entity: binary_sensor.livingroom_occupied
+      state: 'on'
 
 action:
   - service: light.turn_on
