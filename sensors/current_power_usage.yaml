@@ -1,4 +1,7 @@
 platform: mqtt
 name: current power usage
 state_topic: p1monitor/smartmeter/consumption_kw
-value_template: {{ value * 1000 }}
+value_template: >
+  {{ 
+    float(value) * 1000 
+  }}
