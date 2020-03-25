@@ -13,7 +13,7 @@ condition:
       state: 'below_horizon'
 
     - condition: state
-      entity: binary_sensor.livingroom_occupied
+      entity_id: binary_sensor.livingroom_occupied
       state: 'on'
 
 action:
