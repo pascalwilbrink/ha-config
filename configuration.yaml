@@ -20,6 +20,9 @@ api:
 # Conversation
 conversation:
 
+# Discovery
+discovery:
+
 # Sun
 sun:
 
