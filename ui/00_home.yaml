@@ -8,9 +8,9 @@ cards:
   - type: glance
     title: Sensors
     entities:
-      - entity: binary_sensor.openclose_4
+      - entity: binary_sensor.window_door_sensor
         name: Deur woonkamer
-      - entity: binary_sensor.motion_sensor_2
+      - entity: binary_sensor.motion_sensor
         name: Beweging gang
         
   - type: entities
