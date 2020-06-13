@@ -4,8 +4,7 @@ default_config:
 homeassistant: !include core/homeassistant.yaml
 
 # Lovelace
-lovelace:
-  mode: yaml
+lovelace: !include lovelace.yaml
 
 # Frontend
 frontend:
