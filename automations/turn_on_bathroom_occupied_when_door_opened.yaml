@@ -1,0 +1,20 @@
+alias: 'Turn on bathroom occupied when door opened'
+
+trigger:
+  - platform: state
+    entity_id: binary_sensor.bathroom_door
+    to: 'on'
+
+condition:
+  - condition: state
+    entity_id: input_boolean.bathroom_occupied
+    state: 'off'
+
+  - condition: state
+    entity_id: input_boolean.bathroom_occupied
+    state: 'off'
+    
+action:
+  - service: input_boolean.turn_on
+    data:
+      entity_id: input_boolean.bathroom_occupied

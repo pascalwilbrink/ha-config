@@ -1,5 +1,5 @@
 platform: group
-name: Lichten badkamer
+name: Lights bathroom
 entities:
   - light.bathroom
   - light.bathroom_mirror_left

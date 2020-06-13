@@ -1,2 +1,5 @@
 person.pascal:
   entity_picture: '/local/img/profile.png'
+
+light.lights_bathroom:
+  friendly_name: Lichten badkamer

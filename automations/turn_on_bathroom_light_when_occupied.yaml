@@ -1,0 +1,22 @@
+alias: 'Turn on bathroom light when occupied'
+
+trigger:
+  - platform: state
+    entity_id: binary_sensor.bathroom_occupied
+    to: 'on'
+
+condition:
+  condition: and
+  conditions:
+    - condition: state
+      entity_id: input_boolean.automatic_lights
+      state: 'on'
+
+    - condition: state
+      entity_id: light.lights_bathroom
+      state: 'off'
+
+action:
+  - service: light.turn_on
+    data:
+      entity_id: light.lights_bathroom
