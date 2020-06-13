@@ -3,13 +3,17 @@ alias: 'Turn off toilet occupied when door opened'
 trigger:
   - platform: state
     entity_id: binary_sensor.toilet_door
-    to: 'off'
+    to: 'on'
 
 condition:
   - condition: state
     entity_id: input_boolean.automatic_lights
     state: 'on'
 
+  - condition: state
+    entity_id: input_boolean.toilet_occupied
+    state: 'on'
+    
 action:
   - service: input_boolean.turn_off
     data:
