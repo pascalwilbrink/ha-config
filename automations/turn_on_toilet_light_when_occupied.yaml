@@ -9,7 +9,7 @@ condition:
   condition: and
   conditions:
     - condition: state
-      entity_id: automatic_lights
+      entity_id: input_boolean.automatic_lights
       state: 'on'
 
     - condition: state
