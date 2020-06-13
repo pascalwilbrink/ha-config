@@ -1,4 +1,4 @@
-alias: 'Turn on toilet occupied when door opened'
+alias: 'Turn off toilet occupied when door opened'
 
 trigger:
   - platform: state
@@ -13,4 +13,4 @@ condition:
 action:
   - service: input_boolean.turn_off
     data:
-      entity_id: toilet.occupied
+      entity_id: input_boolean.toilet_occupied
