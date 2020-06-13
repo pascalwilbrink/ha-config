@@ -7,7 +7,7 @@ trigger:
 
 condition:
   - condition: state
-    entity_id: toilet_occupied
+    entity_id: input_boolean.automatic_lights
     state: 'on'
 
 action:
