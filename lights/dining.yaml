@@ -1,5 +1,5 @@
 platform: group
 name: Lichten eettafel
 entities:
-  - light.eettafel_links
-  - light.eettafel_rechts
+  - light.dining_table_left
+  - light.dining_table_right

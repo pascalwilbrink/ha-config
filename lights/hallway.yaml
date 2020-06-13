@@ -1,4 +1,4 @@
 platform: group
 name: Lichten gang
 entities:
-  - light.gang
+  - light.hallway

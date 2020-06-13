@@ -1,5 +1,6 @@
 platform: group
 name: Lichten badkamer
 entities:
-  - light.badkamer
-  - light.badkamer_spiegel_links
+  - light.bathroom
+  - light.bathroom_mirror_left
+  - light.bathroom_mirror_right

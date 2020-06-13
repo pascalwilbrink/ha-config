@@ -1,5 +1,5 @@
 platform: group
 name: Lichten keuken
 entities:
-  - light.keuken_links
-  - light.keuken_rechts
+  - light.kitchen_left
+  - light.kitchen_right

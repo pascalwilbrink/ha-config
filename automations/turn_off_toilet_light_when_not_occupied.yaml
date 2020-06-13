@@ -1,0 +1,22 @@
+alias: 'Turn off toilet light when not occupied'
+
+trigger:
+  - platform: state
+    entity_id: binary_sensor.toilet_occupied
+    to: 'off'
+
+condition:
+  condition: and
+  conditions:
+    - condition: state
+      entity_id: automatic_lights
+      state: 'on'
+
+    - condition: state
+      entity_id: light.toilet
+      state: 'on'
+
+action:
+  - service: light.turn_off
+    data:
+      entity_id: light.toilet
