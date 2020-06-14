@@ -13,10 +13,10 @@ condition:
       state: 'on'
 
     - condition: state
-      entity_id: light.kitchen
+      entity_id: light.lights_kitchen
       state: 'on'
 
 action:
   - service: light.turn_off
     data:
-      entity_id: light.kitchen
+      entity_id: light.lights_kitchen
