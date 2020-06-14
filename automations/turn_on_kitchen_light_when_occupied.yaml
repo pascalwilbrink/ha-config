@@ -2,7 +2,7 @@ alias: 'Turn on kitchen light when occupied'
 
 trigger:
   - platform: state
-    entity_id: binary_sensor.kithcen_occupied
+    entity_id: binary_sensor.kitchen_occupied
     to: 'on'
 
 condition:
