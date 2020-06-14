@@ -1,0 +1,16 @@
+alias: 'Turn on kitchen occupied when motion'
+
+trigger:
+  - platform: state
+    entity_id: binary_sensor.motion_kitchen
+    to: 'on'
+
+condition:
+  - condition: state
+    entity_id: input_boolean.kitchen_occupied
+    state: 'off'
+
+action:
+  - service: input_boolean.turn_on
+    data:
+      entity_id: input_boolean.kitchen_occupied

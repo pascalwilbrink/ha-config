@@ -1,0 +1,22 @@
+alias: 'Turn off kitchen light when not occupied'
+
+trigger:
+  - platform: state
+    entity_id: binary_sensor.kitchen_occupied
+    to: 'off'
+
+condition:
+  condition: and
+  conditions:
+    - condition: state
+      entity_id: input_boolean.automatic_lights
+      state: 'on'
+
+    - condition: state
+      entity_id: light.kitchen
+      state: 'on'
+
+action:
+  - service: light.turn_off
+    data:
+      entity_id: light.kitchen
