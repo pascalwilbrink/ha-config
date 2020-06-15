@@ -4,12 +4,23 @@ sensors:
     device_class: occupancy
     friendly_name: 'Home occupied'
     entity_id:
-      - input_boolean.automatic_home_occupancy
-      - input_boolean.home_occupancy
-      - device_tracker.pascal_htcu12
+      - binary_sensor.bathroom_occupied
+      - binary_sensor.toilet_occupied
+      - binary_sensor.bedroom_occupied
+      - binary_sensor.kitchen_occupied
+      - binary_sensor.livingroom_occupied
+      - binary_sensor.hallway_occupied
     value_template: >-
-      {{    
-          (is_state('input_boolean.automatic_home_occupancy', 'on') and is_state('device_tracker.pascal_htcu12', 'home'))
-        or 
-          (is_state('input_boolean.automatic_home_occupancy', 'off') and is_state('input_boolean.override_home_occupancy', 'on'))
+      {{
+        (is_state('input_boolean.bathroom_occupied', 'on'))
+        or
+        (is_state('input_boolean.toilet_occupied', 'on'))
+        or
+        (is_state('input_boolean.bedroom_occupied', 'on'))
+        or
+        (is_state('input_boolean.kitchen_occupied', 'on'))
+        or
+        (is_state('input_boolean.livingroom_occupied', 'on'))
+        or
+        (is_state('input_boolean.hallway_occupied', 'on'))
       }}

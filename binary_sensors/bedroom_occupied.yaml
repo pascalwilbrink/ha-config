@@ -7,5 +7,5 @@ sensors:
       - input_boolean.bedroom_occupied
     value_template: >-
       {{    
-          (is_state('input_boolean.bedroom_occupied', 'on'))
+        (is_state('input_boolean.bedroom_occupied', 'on'))
       }}
