@@ -1,0 +1,20 @@
+alias: 'Turn off Bedroom occupied when door opened'
+
+trigger:
+  - platform: state
+    entity_id: binary_sensor.bedroom_door
+    to: 'on'
+
+condition:
+  - condition: state
+    entity_id: input_boolean.automatic_lights
+    state: 'on'
+
+  - condition: state
+    entity_id: input_boolean.bedroom_occupied
+    state: 'on'
+    
+action:
+  - service: input_boolean.turn_off
+    data:
+      entity_id: input_boolean.bedroom_occupied

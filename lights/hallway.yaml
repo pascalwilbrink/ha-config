@@ -1,4 +1,4 @@
 platform: group
-name: Lichten gang
+name: Lights Hallway
 entities:
   - light.hallway

@@ -1,4 +1,4 @@
 platform: group
-name: Lichten woonkamer
+name: Lights Livingroom
 entities:
   - light.livingroom

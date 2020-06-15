@@ -1,5 +1,5 @@
 platform: group
-name: Lichten slaapkamer
+name: Lights Bedroom
 entities:
   - light.bedroom
   - light.bedroom_closet
