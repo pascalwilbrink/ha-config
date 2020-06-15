@@ -10,6 +10,7 @@ sensors:
       - binary_sensor.kitchen_occupied
       - binary_sensor.livingroom_occupied
       - binary_sensor.hallway_occupied
+      - binary_sensor.office_occupied
     value_template: >-
       {{
         (is_state('input_boolean.bathroom_occupied', 'on'))
@@ -23,4 +24,6 @@ sensors:
         (is_state('input_boolean.livingroom_occupied', 'on'))
         or
         (is_state('input_boolean.hallway_occupied', 'on'))
+        or
+        (is_state('input_boolean.office_occupied', 'on'))
       }}
