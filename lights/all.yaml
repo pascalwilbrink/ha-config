@@ -1,5 +1,5 @@
 platform: group
-name: Lichten
+name: All
 entities:
   - light.lights_bathroom
   - light.lights_dining
