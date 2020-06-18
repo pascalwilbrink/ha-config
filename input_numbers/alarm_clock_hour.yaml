@@ -1,0 +1,6 @@
+name: 'Alarm clock hour'
+min: 0
+max: 23
+step: 1
+initial: 7
+mode: slider
